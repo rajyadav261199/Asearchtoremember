@@ -1,0 +1,262 @@
+Agenda....
+
+
+1.DBMS Understanding?
+
+
+Database Systems
+
+a.Database 
+	
+	a1. Structured Database: which has some structure
+	
+ex: Employee,irctc,Flight booking,flipkart,banking,telecome,helathcare
+
+               a2.Unstructured Database: which has no structure
+
+ex: Webpage
+text,hypetr,audio,video,animations
+
+
+
+
+
+
+What is a Database?
+
+Abhsishek has a good database of Automibiles
+
+Abhsishek has a good information of Automibiles
+
+ModelNo,Price,yearofmanufactir,colours,fuel type
+
+
+
+
+
+
+b.DBMS: a software that manages the database
+
+Oracle,Mysql,Postgres,SqlServer
+
+
+How do  i store this databases in dbms?
+
+Database are mainted in the form of a table
+
+
+What is a table?
+
+consists of data in the form of rows and columns where rows are nothing but data and colulms are nothibg but attributes.
+At the end we manage a relational data ie structured data ie relational database management system
+
+
+
+How do we manage the data or perform set of operations on the database?
+
+DBMS provides a language called SQL.
+
+2.SQL : IS A LANGUAGE USED TO PERFORM SET OF OPERATION ON STRUCTURED DATA.
+
+
+How should we start with SQL.
+
+
+
+1. Know the datatypes of that respective dbms?
+
+Oracle
+
+Character Based Data types: ' '
+
+1.char:best uses for single aplhpabet storage
+
+2.varchar:its not a varaiable length data type,2000 character
+Ex: varchar(20):it will create a space for 20 character----space will be fixed for 2o character wheatger used or not
+
+3.varchar2:its  a varaiable length data type,4000 characters
+Ex: varchar2(20):it will create a space for 20 character--->space will be created only for the number of character stored.
+
+
+
+4.nchar:its not a varaiable length data type,used for storing encoding charcter formats.
+NLS format---->National Language Specfication
+
+
+5.nvarchar2:its  a varaiable length data type
+NLS format---->National Language Specfication
+
+
+Numeric Data Types
+number(p,s):
+p-precision
+s-size
+number(s);
+
+float: large fractional values
+
+int: not physical available in oracle
+
+
+
+Date Data Types
+date: stores data moth year hours minutes secs
+timsestamp:stores data moth year hours minutes secs fsec
+
+
+
+
+Advanced Data Types
+blob: 4gb of data,binary hexadecimal format,it can store all type of formats,jpeg,gif,png,doc,pdf,text
+clob:2gb of data,text format
+
+
+
+raw: hexadecimal value,32575,0-9 & a-f
+
+raw('8999jkil');
+
+
+long: numerical value
+
+long(123566);'123456'
+
+
+
+Ex:
+
+ename,eid,salary,designation
+10
+10
+10
+10
+
+
+2. Know the SQL Commands
+
+DDL: ANY OPERATIONS INVOLVED WITH THE STRUCTURE
+1.create,alter,rename,truncate,drop
+
+DML:ANY OPERATIONS INVOLVED WITH THE Data
+1.insert,update,delete,select
+
+DCL:ANY OPERATIONS INVOLVED WITH THE Prvilages/Permisiion
+grant,revoke
+
+TCL:ANY OPERATIONS INVOLVED WITH THE DB Transaction
+commit,rollback,savepoint
+
+3.Know the Operators.
+
+Arithmetic Operators: +,-,*,/,%
+Assignment Operators:=
+Relational Operators: <,<=,>=,==,!=
+
+Logical Operators: AND,OR,NOT,IN,BETWEEN,LIKE,IS NULL, 
+
+
+Advanced Operators:
+
+SET,UNION,UNIOALLINTERSECT,MINUS
+
+
+
+Know about Data Integerity Management?
+
+Constraints.
+
+Primary Key: no duplicates and null values allowed ie ( Unique+Not null)
+
+
+Unique key: no duplicates
+Not null:no null
+Check: to apply some range,or the format of data
+
+
+create table employee(empid number check(empid between 50 and 2000),name varchar2(20),age number not null check(age >=18));
+
+
+Default
+foriegn key
+
+
+
+
+****************************************************************************************************************************
+
+
+Delete: used for partial and complete deleteion
+its slower
+rollback can be done to retrive data baack
+
+
+Truncate: used for complete deletion
+its fast
+rollback will not work
+
+
+
+
+
+Drop: used for deleteing the table or removing the table
+
+we can recove the table by using advacnced dml commands called  flashback
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Functions in Oracle:
+
+Numeric Functions: abs(),ceil(),floor(),round(),power(),truunc()
+
+String functions:length(),lower(),upper(),substr(),instr(),lpad(),rpad()
+
+
+Date Functions: sysdate,add_months(),last_day(),next_day(),months_between(),current_date;
+
+Conversion functions:to_char,to_date
+Multi Row Functions(Aggregate functions):MIN,MAX,SUM,COUNT,AVG
+
+
+Clauses.: help us to sort the data based on some condition
+where
+order by
+group by
+having
+fetch first
+fetch last
+
+
+
+
+
+
+
+
+
+
+
